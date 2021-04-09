@@ -1,0 +1,6 @@
+PATCH  http://localhost:8080/trades/5f5fb094c02bea7c5f4248db  HTTP/1.1
+content-type: application/json
+
+{
+    "requestedPrice": 63
+}

@@ -1,0 +1,27 @@
+.nav-active {
+    color: goldenrod,
+}
+
+.nav {
+    width: 10%; /* Set the width of the sidebar */
+    min-width: 120px;
+    /* position: fixed; Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.logo {
+    background-image: url("../media/Citi-Enterprise-White.png");
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

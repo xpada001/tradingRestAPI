@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+
+    stages {
+        stage(‘Build’) {
+            sh 'gradle build.gradle classes'
+        }
+    }
+}

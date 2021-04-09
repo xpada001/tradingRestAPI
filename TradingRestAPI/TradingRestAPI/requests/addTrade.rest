@@ -1,0 +1,41 @@
+POST http://localhost:8080/trades HTTP/1.1
+content-type: application/json
+
+{
+    "dateCreated": "2014-10-20",
+    "stockTicker": "AA",
+    "stockQuantity": 3,
+    "requestedPrice": 200,
+    "tradeStatus": "CREATED",
+    "tradeType":"BUY"
+}
+
+#  {
+#      "dateCreated": "2014-10-20",
+#      "stockTicker": "APPL",
+#     "stockQuantity": 100,
+#      "requestedPrice": 2000,
+#      "tradeStatus": "CREATED",
+#      "tradeType":"SELL"
+#  }
+
+# {
+#     "dateCreated": "2015-10-01",
+#     "stockTicker": "GOOGL",
+#     "stockQuantity": 50,
+#     "requestedPrice": 1000,
+#     "tradeStatus": "CREATED",
+#      "tradeType":"SELL"
+# }
+
+# {
+#     "dateCreated": "2015-10-20",
+#     "stockTicker": "NHLdddd",
+#     "stockQuantity": 200,
+#     "requestedPrice": 1500,
+#     "tradeStatus": "CREATED",
+#      "tradeType":"SELL"
+# }
+
+
+

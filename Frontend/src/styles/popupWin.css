@@ -1,0 +1,34 @@
+.editDeposit {
+    text-align: center;
+}
+#depositAmount{
+    margin-left:6.5em;
+}
+
+.withdrawlDeposit{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:absolute;
+    bottom:30px;
+    left:120px;
+}
+
+.addDeposit{
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:absolute;
+    bottom:30px;
+    right:120px;
+}

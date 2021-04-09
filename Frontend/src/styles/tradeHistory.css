@@ -1,0 +1,6 @@
+.tradeTable::-webkit-scrollbar {
+}
+.tradeTable {
+    height: 300px;
+    overflow-y: auto;
+  }
