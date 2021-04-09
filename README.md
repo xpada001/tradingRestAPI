@@ -1,45 +1,43 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes.**
+# tradingRestAPI (construction in progresss)
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+To get started with a spring framework, go to https://start.spring.io/.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Four main components:
 
----
+## Python script for visualization
 
-## Edit a file
+First, make sure you have python installed by running 
+```
+python3 --version
+```
+If it is installed, then run 
+```
+pip install -r requirements.txt
+```
+where requirements.txt is in the tradeingAdvice folder. Once everything is installed, run
+```
+python3 bollinger.py
+```
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+## Front end
+Make sure that you have react-scripts installed (otherwise run "npm install react-script") then run 
+```
+npm start 
+```
+to start the front end, the page should automatically open at localhost:3000
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+## API
 
----
+run the main function in API folder in your IDE to start the back end.
 
-## Create a file
+## dummy stock filler
 
-Next, you’ll add a new file to this repository.
+Created by the tutor at https://bitbucket.org/fcallaly/dummy-trade-filler/src/master/. This is a siumulator for updating the status of our stock purchases (i.e. it will randomly fill or reject our request. 
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+You can start this filler by running the main function in IDE.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+Note that the entities definition in model folder and the TradeMongoDao.java in dao folder have been updated to adhere with this project.
 
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## MongoDB
+Download the mongoDB compass, then for connection, select localhost as hostname and 27017 as port, this will connect your local mongoDB collections.
+Note: in tradeRestAPI resource folder -> application.properties, you can see that "spring.data.mongodb.uri = mongodb://localhost/test", which indicate the data has been written to localhost/test database, in which you should find portfolio and trade collections.
