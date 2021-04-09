@@ -42,12 +42,12 @@ Note: in tradeRestAPI resource folder -> application.properties, you can see tha
 ## Trading RestAPI
 
 run the main function in API folder in your IDE to start the back end. This is the back end where we have features such as:
-- Buy and sell trade (input: buy/sell, stock ticker, stock quantity, requested price), request will either sent successfully or not based on if portfolio deposit is sufficient or not. Then, the dummy filler will either approve or reject the request
+- Buy and sell trade (input: buy/sell, stock ticker, stock quantity, requested price), request will either sent successfully or not based on if portfolio deposit is sufficient or not. Then, the dummy filler will either approve or reject the request.
 - Trading advice: based on bollinger band using data provided by Yahoo Finance for recent 30 days trend, it will provide buy/sell advice.
 - Watch list: add stock tickers (with data provided by Yahoo Finance) for monitoring purposes. 
 - Portfolio:
   - Calculate the portfolio summary (what are the holding stock tickers, stock quantity and total stock value), you can sort them in ascending or descending order.
-  - More visualization (pie charge and bar plot) on your portfolio summary
+  - More visualizations (pie charge and bar plot) on the portfolio summary.
   - Pending trades (shows recent trading requests that is still processing) and completed trades table (mostly either filled or rejected). Request status will be refreshed periodically and move automatically from pending trades table to complete trades table.
 
 An example of the portfolio UI:
