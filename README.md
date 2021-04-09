@@ -46,6 +46,7 @@ run the main function in API folder in your IDE to start the back end. This is t
 - Trading advice: based on bollinger band using data provided by Yahoo Finance for recent 30 days trend, it will provide buy/sell advice.
 - Watch list: add stock tickers (with data provided by Yahoo Finance) for monitoring purposes. 
 - Portfolio:
+  - Show portfolio current deposit, and user can add or withdraw deposit in a pop up window.
   - Calculate the portfolio summary (what are the holding stock tickers, stock quantity and total stock value), you can sort them in ascending or descending order.
   - More visualizations (pie charge and bar plot) on the portfolio summary.
   - Pending trades (shows recent trading requests that is still processing) and completed trades table (mostly either filled or rejected). Request status will be refreshed periodically and move automatically from pending trades table to complete trades table.
